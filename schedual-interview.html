@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Interview</title>
+    <link rel="stylesheet" href="schedual-interview.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule Interview</h1>
+
+        <form id="scheduleInterviewForm">
+            <!-- Dropdown to select student -->
+            <label for="studentSelect">Select Student:</label>
+            <select id="studentSelect">
+                <option value="">Select a student</option>
+                <option value="1">Student 1 (Sana K S)</option>
+                <option value="2">Student 2 (Swapnil Sharma)</option>
+                <option value="3">Student 3 (Rishikesh Raj)</option>
+                <!-- Add more student options as needed -->
+            </select>
+
+            <!-- Interview Date Input -->
+            <label for="interviewDate">Interview Date:</label>
+            <input type="date" id="interviewDate" required>
+
+            <!-- Interview Time Input -->
+            <label for="interviewTime">Interview Time:</label>
+            <input type="time" id="interviewTime" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Schedule Interview</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <p>Interview scheduled successfully!</p>
+        </div>
+    </div>
+
+    <script src="schedual-interview.js"></script>
+</body>
+</html>

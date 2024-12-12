@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="jobapp.css">
+</head>
+<body>
+    <div class="application-form-container">
+        <h1>Job Application</h1>
+        <form id="jobApplicationForm">
+            <label for="cgpa">Enter Your CGPA:</label>
+            <input type="text" id="cgpa" name="cgpa" placeholder="e.g., 8.5" required>
+            
+            <label for="skills">Enter Your Skills (comma-separated):</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Python" required>
+            
+            <label for="domain">Enter Your Domain:</label>
+            <input type="text" id="domain" name="domain" placeholder="e.g., Software Development" required>
+            
+            <label for="cv">Upload Your CV (PDF only):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="jobapp.js"></script>
+</body>
+</html>

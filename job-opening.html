@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job Opening</title>
+    <link rel="stylesheet" href="job-opening.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add Job Opening</h1>
+        <form>
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" required>
+            
+            <label for="jobDescription">Job Description:</label>
+            <textarea id="jobDescription" required></textarea>
+            
+            <label for="eligibility">Eligibility Criteria:</label>
+            <textarea id="eligibility" required></textarea>
+            
+            <label for="deadline">Application Deadline:</label>
+            <input type="date" id="deadline" required>
+            
+            <button type="submit">Add Job</button>
+        </form>
+    </div>
+    <script src="job-opening.js"></script>
+</body>
+</html>
